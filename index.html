@@ -52,13 +52,16 @@ ul.plain .t{font-weight:600}.ul-sub{color:var(--muted);font-size:.9rem;display:b
 .skills .tags{margin:0}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
 .status{font-size:.75rem;font-weight:700;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-left:6px;white-space:nowrap}
+h2 small{font-size:.85rem;font-weight:500;color:var(--muted);margin-left:8px}
+.sub{color:var(--muted);margin:-12px 0 20px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
 footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
 @media(max-width:620px){.nav nav a:nth-child(n+4){display:none}.hero{padding-top:52px}}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap"><b>M. H. Masum</b>
-<nav><a href="#experience">Experience</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#awards">Awards</a><a href="#contact">Contact</a></nav></div></header>
+<header class="nav"><div class="wrap"><b>Maidul</b>
+<nav><a href="#experience">Experience</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#leadership">Leadership</a><a href="#scholarships">Scholarships</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav></div></header>
 
 <main class="wrap">
 <div class="hero">
@@ -72,27 +75,25 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   </div>
 </div>
 
-<section id="research-highlights">
+<section id="glance">
   <h2>At a glance</h2>
   <div class="stats">
     <div class="stat"><strong>IEEE</strong><span>Sensors Journal, first-author review (2025)</span></div>
     <div class="stat"><strong>3.70 / 4.00</strong><span>CGPA, First Class Honours, UTM</span></div>
-    <div class="stat"><strong>99.57%</strong><span>mAP@0.5 with just 1.37 M parameters (WSN-YOLO)</span></div>
+    <div class="stat"><strong>99.57%</strong><span>mAP@0.5 with 1.37 M parameters (WSN-YOLO)</span></div>
     <div class="stat"><strong>64.7%</strong><span>less compute via adaptive early-exit inference</span></div>
   </div>
 </section>
 
 <section id="experience">
-  <h2>Experience</h2>
+  <h2>Industry experience</h2>
   <div class="tl">
     <article class="job"><div class="top"><div><h3>AI Algorithm Engineer</h3><div class="org">Graymatics Singapore Pte. Ltd.</div></div><div class="when">Sep 2023 – present</div></div>
       <p>Develop and deploy computer vision algorithms for real-time video analytics across live camera systems: object detection, multi-object tracking and behaviour analysis for waste classification (with pixel-to-weight calibration), traffic monitoring, retail analytics, PPE and safety compliance, and face blurring. Own model design, training, threshold tuning, post-processing and production evaluation.</p>
       <div class="tags" style="margin-top:12px"><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">CUDA</span><span class="tag">TensorRT</span><span class="tag">ONNX</span><span class="tag">Triton</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">SORT / ByteTrack</span></div></article>
-    <article class="job"><div class="top"><div><h3>Graduate Research Assistant (MSc by Research)</h3><div class="org">Universiti Malaya</div></div><div class="when">Oct 2024 – 2026</div></div>
-      <p>Fully funded research on Edge AI and wireless vision sensor networks. Designed WSN-YOLO, an ultra-lightweight detector found by searching the architecture space rather than pruning an existing model.</p></article>
-    <article class="job"><div class="top"><div><h3>AI R&amp;D Intern</h3><div class="org">Maybank (Malayan Banking Berhad)</div></div><div class="when">Sep 2022 – Feb 2023</div></div>
+    <article class="job"><div class="top"><div><h3>AI R&amp;D Intern</h3><div class="org">Maybank (Malayan Banking Berhad), Malaysia</div></div><div class="when">Sep 2022 – Feb 2023</div></div>
       <p>AI and machine-learning research and development for financial-services applications: reviewed methods, built and evaluated predictive models, and analysed algorithm performance for insurance and financial decision-making.</p></article>
-    <article class="job"><div class="top"><div><h3>AI Development Intern</h3><div class="org">Expertel S.A. / Proceedit (Spain, remote)</div></div><div class="when">Jan – Aug 2022</div></div>
+    <article class="job"><div class="top"><div><h3>AI Development Intern</h3><div class="org">Expertel S.A. / Proceedit, Spain (remote)</div></div><div class="when">Jan – Aug 2022</div></div>
       <p>Designed, implemented and tested machine-learning functions for digital solutions, working remotely with an international team.</p></article>
   </div>
 </section>
@@ -109,6 +110,14 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 
 <section id="research">
   <h2>Research</h2>
+  <h3 style="margin:0 0 12px;font-size:1rem;color:var(--muted)">Research assistant roles</h3>
+  <div class="tl" style="margin-bottom:28px">
+    <article class="job"><div class="top"><div><h3>Graduate Research Assistant</h3><div class="org">Universiti Malaya · fully funded</div></div><div class="when">Oct 2024 – 2026</div></div>
+      <p>Edge AI and wireless vision sensor networks. Designed WSN-YOLO, an ultra-lightweight detector found by searching the architecture space rather than pruning an existing model.</p></article>
+    <article class="job"><div class="top"><div><h3>Undergraduate Research Assistant</h3><div class="org">Universiti Teknologi Malaysia</div></div><div class="when">2021 – 2023</div></div>
+      <p>Worked with faculty on AI and IoT research (adoption of IoT for e-learning, later published in Frontiers in Psychology) and applied projects including an automated wheelchair and a Raspberry Pi race-timer.</p></article>
+  </div>
+  <h3 style="margin:0 0 12px;font-size:1rem;color:var(--muted)">Research projects</h3>
   <div class="grid">
     <article class="card"><div class="tags"><span class="tag">PyTorch</span><span class="tag">YOLOv7</span><span class="tag">Neural architecture search</span></div>
       <h3>WSN-YOLO (LightYolo-SSO)</h3>
@@ -120,6 +129,67 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       <a href="https://github.com/mh-masum6875/Adaptive-LightYolo-SSO">View on GitHub →</a></article>
   </div>
   <p class="lead" style="margin-top:20px">Common thread: treating efficiency as a design constraint rather than a post-training statistic, with controlled comparisons that report accuracy together with compute cost and deployment conditions.</p>
+</section>
+
+<section id="teaching">
+  <h2>Teaching &amp; academic support</h2>
+  <div class="tl">
+    <article class="job"><div class="top"><div><h3>Teaching Assistant</h3><div class="org">UTM-IET Capstone Experience 5.0</div></div></div>
+      <p>Supported teaching staff and students on the capstone programme.</p></article>
+    <article class="job"><div class="top"><div><h3>Academic support volunteer</h3><div class="org">Universiti Teknologi Malaysia</div></div><div class="when">Jun 2022</div></div>
+      <p>Assisted teaching staff with student queries and practical / tutorial sessions, helping students understand course material.</p></article>
+    <article class="job"><div class="top"><div><h3>Part-time tutor</h3><div class="org">Abedeen Academy, Malaysia</div></div></div>
+      <p>Teaching computing and English-related subjects; several years of English tutoring.</p></article>
+  </div>
+</section>
+
+<section id="leadership">
+  <h2>Leadership &amp; service</h2>
+  <div class="tl">
+    <article class="job"><div class="top"><div><h3>Head of Business, Entrepreneurship &amp; Networking</h3><div class="org">Kolej Dato' Onn Jaafar, UTM</div></div><div class="when">Jan – Aug 2023</div></div>
+      <p>Led business, entrepreneurship and networking activities for the residential college, coordinating student initiatives and connections with university stakeholders and external partners.</p></article>
+    <article class="job"><div class="top"><div><h3>Vice President</h3><div class="org">Kolej Datin Seri Endon, UTM</div></div><div class="when">2021</div></div>
+      <p>Supported leadership and administration of the residential college and represented residents' interests on the committee.</p></article>
+    <article class="job"><div class="top"><div><h3>Secretary</h3><div class="org">International Student Society Central, UTM</div></div><div class="when">2021</div></div>
+      <p>Managed meeting records, correspondence and coordination for a society connecting international students.</p></article>
+    <article class="job"><div class="top"><div><h3>Secretary</h3><div class="org">UTM Global Buddies, UTM International</div></div><div class="when">2020 – 2022</div></div>
+      <p>Coordinated communications and administration for a programme welcoming international students and promoting cross-cultural understanding.</p></article>
+    <article class="job"><div class="top"><div><h3>Technical Team Member</h3><div class="org">4th International Conference on Applied Computing 2023</div></div><div class="when">Aug 2023</div></div>
+      <p>Supported technical and operational arrangements for the hybrid conference and participant outreach.</p></article>
+    <article class="job"><div class="top"><div><h3>Delegate reception volunteer</h3><div class="org">13th UTM University Presidents Forum 2023</div></div><div class="when">May 2023</div></div>
+      <p>Supported reception and coordination of international university delegates with UTM International.</p></article>
+  </div>
+</section>
+
+<section id="scholarships">
+  <h2>Scholarships &amp; international programmes</h2>
+  <div class="cols">
+    <ul class="plain">
+      <li><span class="t">ICP Scholarship — Hasanuddin University</span><span class="ul-sub">Fully funded International Cultural Program 2023, Indonesia</span></li>
+      <li><span class="t">ITS-UTM Leadership Programme 2023</span><span class="ul-sub">Selected participant, Surabaya, Indonesia</span></li>
+      <li><span class="t">Youth Regional Affairs Dialogue 2022</span><span class="ul-sub">NTU University Scholars Programme, Singapore (supported by Temasek Foundation)</span></li>
+    </ul>
+    <ul class="plain">
+      <li><span class="t">UNPAD International Virtual Summer Programme 2021</span><span class="ul-sub">UTM-funded · marine tourism and coastal vulnerability</span></li>
+      <li><span class="t">UKM U-LEAD 2021</span><span class="ul-sub">UTM-funded Virtual Global Leadership Programme</span></li>
+      <li><span class="t">Fully funded MSc by research</span><span class="ul-sub">Graduate Research Assistantship, Universiti Malaya</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="awards">
+  <h2>Awards</h2>
+  <div class="cols">
+    <ul class="plain">
+      <li><span class="t">Best Undergraduate Research Award</span><span class="ul-sub">UTM Undergraduate Research Conference 2023</span></li>
+      <li><span class="t">Dean's Award</span><span class="ul-sub">Faculty of Computing, UTM · 2023</span></li>
+      <li><span class="t">Second Prize, ACF2023 Idea Contest</span><span class="ul-sub">ASEAN Career Fair with Japan · AI application concept</span></li>
+    </ul>
+    <ul class="plain">
+      <li><span class="t">Third Prize, Youth Regional Affairs Dialogue 2022</span><span class="ul-sub">NTU, Singapore · project on the future of AI</span></li>
+      <li><span class="t">Runner-up, Sayembara Bahasa Melayu 2021</span><span class="ul-sub">International Student Category, Malaysia-wide</span></li>
+    </ul>
+  </div>
 </section>
 
 <section id="publications">
@@ -147,27 +217,6 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <article class="card"><div class="tags"><span class="tag">Java</span><span class="tag">Spring MVC</span><span class="tag">MySQL</span></div>
       <h3>Online School Management System</h3><p>A web app for student records, attendance, results and notices with role-based access and printable reports.</p>
       <a href="https://github.com/mh-masum6875/Online-School-Management-System">View on GitHub →</a></article>
-  </div>
-</section>
-
-<section id="awards">
-  <h2>Awards &amp; leadership</h2>
-  <div class="two">
-    <div><ul class="plain">
-      <li><span class="t">Best Undergraduate Research Award</span><span class="ul-sub">UTM Undergraduate Research Conference 2023</span></li>
-      <li><span class="t">Dean's Award</span><span class="ul-sub">Faculty of Computing, UTM · 2023</span></li>
-      <li><span class="t">Second Prize, ACF2023 Idea Contest</span><span class="ul-sub">ASEAN Career Fair with Japan · AI application concept</span></li>
-      <li><span class="t">Third Prize, Youth Regional Affairs Dialogue 2022</span><span class="ul-sub">NTU University Scholars Programme, Singapore · future of AI</span></li>
-      <li><span class="t">Runner-up, Sayembara Bahasa Melayu 2021</span><span class="ul-sub">International Student Category, Malaysia-wide</span></li>
-      <li><span class="t">ICP Scholarship, Hasanuddin University</span><span class="ul-sub">Fully funded International Cultural Program 2023, Indonesia</span></li>
-    </ul></div>
-    <div><ul class="plain">
-      <li><span class="t">Head of Business, Entrepreneurship &amp; Networking</span><span class="ul-sub">Kolej Dato' Onn Jaafar, UTM · 2023</span></li>
-      <li><span class="t">Vice President</span><span class="ul-sub">Kolej Datin Seri Endon, UTM · 2021</span></li>
-      <li><span class="t">Secretary</span><span class="ul-sub">International Student Society Central · UTM Global Buddies</span></li>
-      <li><span class="t">Teaching Assistant</span><span class="ul-sub">UTM-IET Capstone Experience 5.0 · plus part-time tutoring in computing and English</span></li>
-      <li><span class="t">Technical Team Member</span><span class="ul-sub">4th International Conference on Applied Computing 2023</span></li>
-    </ul></div>
   </div>
 </section>
 
