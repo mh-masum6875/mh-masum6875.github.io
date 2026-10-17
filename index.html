@@ -156,7 +156,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 
   <h3 class="group">Case studies</h3>
   <article class="case">
-    <h3>WSN-YOLO (LightYolo-SSO)</h3><div class="kicker">MSc dissertation · ultra-lightweight object detection for wireless sensor networks</div>
+    <h3>LightYolo-SSO (WSN-YOLO)</h3><div class="kicker">MSc dissertation · ultra-lightweight object detection for wireless sensor networks</div>
     <p><b>Problem.</b> Accurate detection models are often too heavy for wireless vision sensor nodes, while lightweight models can fail when sensing conditions shift.</p>
     <p><b>Method.</b> Instead of pruning an existing model, I searched the architecture space directly with Sperm Swarm Optimization (SSO) over a 15-dimensional space, using a multi-objective fitness that balances accuracy, FLOPs, parameters and inference time (weights 0.4 / 0.3 / 0.2 / 0.1). Built on YOLOv7, trained on the Intel Berkeley Research Laboratory (IBRL) dataset: 31,067 grayscale images, two classes (normal, anomaly).</p>
     <h4>Results vs baselines</h4>
@@ -168,7 +168,7 @@ footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-s
       <tr><td>F1-score</td><td>98.0%</td><td>96.9%</td><td class="hl">97.6%</td></tr></table></div>
     <p>78.0% fewer parameters, 76.5% fewer FLOPs and a 93.8% smaller model than YOLOv7-tiny, while retaining 99.88% of its mAP.</p>
     <div class="tags"><span class="tag">PyTorch</span><span class="tag">YOLOv7</span><span class="tag">Sperm Swarm Optimization</span><span class="tag">Neural architecture search</span><span class="tag">MATLAB</span></div>
-    <a href="https://github.com/mh-masum6875/-LightYolo-SSO">Code &amp; results on GitHub →</a>
+    <a href="https://github.com/mh-masum6875/LightYolo-SSO">Code &amp; results on GitHub →</a>
   </article>
   <article class="case">
     <h3>Adaptive LightYolo-SSO</h3><div class="kicker">Energy-efficient anomaly detection via dynamic early-exit inference</div>
