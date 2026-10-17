@@ -167,6 +167,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 @media (max-width:540px){.nav nav a:nth-child(n+4){display:none}.nav nav{gap:18px}.facts{padding:20px}}
 
 /* polish */
+.steps{margin:6px 0 10px;padding-left:20px;color:var(--muted);font-size:.95rem}.steps li{margin:4px 0}
 .awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
 .award{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warm);border-radius:14px;padding:18px 22px;transition:transform .2s ease,border-color .2s ease}
 .award:hover{transform:translateY(-3px);border-color:var(--accent)}
@@ -295,36 +296,22 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 <section id="research">
   <div class="label">Research</div>
   <h2>Efficient models for small devices</h2>
-  <p class="lede">I try to treat cost as part of the design from the start, and to compare methods fairly: same data, same conditions, accuracy reported next to compute.</p>
+  <p class="lede">I try to treat cost as part of the design from the start, and to compare methods fairly: same data, same conditions, accuracy always reported next to compute.</p>
 
   <div class="cards">
     <article class="card">
       <h3>LightYolo-SSO</h3><div class="org">Also called WSN-YOLO</div>
       <p>An object detector for wireless sensor nodes that have very little memory and power. Instead of shrinking an existing model, I searched for the architecture directly using Sperm Swarm Optimization, scoring each candidate on accuracy, FLOPs, size and speed.</p>
-      <div class="big"><div><strong>78%</strong><span>fewer parameters than YOLOv7-tiny</span></div><div><strong>2.9 MB</strong><span>model size, against 47 MB</span></div><div><strong>99.57%</strong><span>mAP@0.5</span></div></div>
-      <details><summary>See the comparison</summary>
-        <div class="tbl"><table><tr><th></th><th>YOLOv7-tiny</th><th>YOLOv5n</th><th class="me">LightYolo-SSO</th></tr>
-        <tr><td>Parameters</td><td>6,217,389</td><td>1,761,871</td><td class="me">1,370,478</td></tr>
-        <tr><td>FLOPs</td><td>13.2 G</td><td>4.1 G</td><td class="me">3.1 G</td></tr>
-        <tr><td>Model size</td><td>47 MB</td><td>15 MB</td><td class="me">2.9 MB</td></tr>
-        <tr><td>mAP@0.5</td><td>99.69%</td><td>99.0%</td><td class="me">99.57%</td></tr>
-        <tr><td>F1-score</td><td>98.0%</td><td>96.9%</td><td class="me">97.6%</td></tr></table></div>
-        <p class="note" style="margin-top:10px">Trained and tested on the Intel Berkeley Research Laboratory (IBRL) sensor dataset: 31,067 grayscale images in two classes, normal and anomaly.</p>
-      </details>
+      <ul class="steps"><li>Searches the architecture directly instead of shrinking an existing model</li><li>Scores every candidate on accuracy together with FLOPs, size and speed</li><li>Compared fairly with compact YOLO baselines on the same sensor dataset</li></ul>
+      <p class="note">Results are being updated as the work continues.</p>
       <a class="go" href="https://github.com/mh-masum6875/LightYolo-SSO">View the code on GitHub</a>
     </article>
 
     <article class="card">
       <h3>Adaptive LightYolo-SSO</h3><div class="org">Early-exit inference</div>
       <p>Most inputs are easy, so running the whole network on them wastes energy. I added two early exits to the LightYolo-SSO backbone. Easy samples leave early, and only the hard ones go all the way through.</p>
-      <div class="big"><div><strong>98.6%</strong><span>of samples leave at the first exit</span></div><div><strong>64.7%</strong><span>less compute on average</span></div><div><strong>99.55%</strong><span>accuracy</span></div></div>
-      <details><summary>See the numbers</summary>
-        <div class="tbl"><table><tr><th></th><th class="me">Early exit on</th><th>Full network</th></tr>
-        <tr><td>Accuracy</td><td class="me">99.55%</td><td>99.52%</td></tr>
-        <tr><td>F1-score</td><td class="me">99.66%</td><td>99.64%</td></tr>
-        <tr><td>Average compute</td><td class="me">92.2 M MACs</td><td>261.2 M MACs</td></tr></table></div>
-        <p class="note" style="margin-top:10px">The exit branches add 25,062 parameters, about 1.8% of the model. Savings are measured in operations, so real energy and latency still need testing on hardware.</p>
-      </details>
+      <ul class="steps"><li>Two small exit branches on the LightYolo-SSO backbone</li><li>Confident samples leave early and skip most of the computation</li><li>Savings are measured in operations, with hardware tests still to come</li></ul>
+      <p class="note">Results are being updated as the work continues.</p>
       <a class="go" href="https://github.com/mh-masum6875/Adaptive-LightYolo-SSO">View the code on GitHub</a>
     </article>
   </div>
