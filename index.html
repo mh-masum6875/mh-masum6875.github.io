@@ -167,6 +167,11 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 @media (max-width:540px){.nav nav a:nth-child(n+4){display:none}.nav nav{gap:18px}.facts{padding:20px}}
 
 /* polish */
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:5px 14px 5px 11px;border-radius:999px;margin-bottom:18px}
+.status .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.status .dot{animation:none}}
+
 .skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;z-index:30}
 .skip:focus{left:12px}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
@@ -187,13 +192,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 <div class="progress" id="bar"></div>
 <header class="nav"><div class="wrap">
   <a class="brand" href="#top">Maidul</a>
-  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
+  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#skills">Skills</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
   <div class="tools"><button class="theme" id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></div>
 </div></header>
 
 <main class="wrap" id="top">
 <div class="hero">
   <div>
+    <div class="status"><span class="dot"></span>Open to computer vision roles and collaborations</div>
     <div class="hello">Hello, I'm</div>
     <h1>Maidul Hasan Masum</h1>
     <p class="intro">I'm an AI engineer who works on computer vision. At Graymatics in Singapore I build <b>video analytics that runs on live camera feeds</b>. In research, I work on <b>small, efficient detection models</b> for devices with very little memory and power.</p>
@@ -219,7 +225,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="prose">
     <p>I like work where an idea has to survive contact with the real world. At Graymatics I build and ship video analytics: counting and classifying vehicles, checking safety and PPE compliance, spotting shoplifting, estimating the weight of sorted waste, and summarising long recordings so a reviewer can find the incident quickly. Each analytic runs on many cameras across many sites, over <b>more than 300 live IP camera streams</b> in total, so latency and reliability matter as much as accuracy.</p>
     <p>My research asks the same question from the other side: how small can a model get before it stops being useful? My MSc looks at object detection on tiny wireless sensor devices, and I try to measure accuracy together with what it costs to run.</p>
-    <p>I also teach. I'm a part-time computing teacher at Abedeen International School in Putrajaya, and from 2023 to 2026 I tutored English at EF English Academy. Explaining an idea clearly is the fastest way I know to find out whether I really understand it.</p>
+    <p>I also teach. From 2023 to 2026 I tutored English at EF English Academy, and I have been a teaching assistant at university. Explaining an idea clearly is the fastest way I know to find out whether I really understand it.</p>
   </div>
   <div class="nums">
     <div class="num"><strong>3+ years</strong><span>building production computer vision</span></div>
@@ -372,6 +378,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   </div>
 </section>
 
+<section id="skills">
+  <div class="label">Skills</div>
+  <h2>What I work with</h2>
+  <p class="lede">Tools I use every week to take a model from an idea to a stream running in production.</p>
+  <div class="skillgrid">
+    <div><h3>AI and machine learning</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">OpenCV</span><span class="tag">Hugging Face</span><span class="tag">Ultralytics YOLO (v5 to v11)</span></div></div>
+    <div><h3>Computer vision</h3><div class="tags"><span class="tag">Object detection</span><span class="tag">Image classification</span><span class="tag">Instance segmentation</span><span class="tag">Tracking (SORT, ByteTrack, DeepSORT)</span><span class="tag">Behaviour analytics</span></div></div>
+    <div><h3>Deployment</h3><div class="tags"><span class="tag">TensorRT</span><span class="tag">ONNX</span><span class="tag">Triton</span><span class="tag">Docker</span><span class="tag">AWS EC2</span><span class="tag">CUDA</span><span class="tag">Real-time inference</span></div></div>
+    <div><h3>Language and LLM work</h3><div class="tags"><span class="tag">Prompt engineering</span><span class="tag">Text classification</span><span class="tag">Summarisation</span><span class="tag">Information extraction</span><span class="tag">OCR</span><span class="tag">Transformer fine-tuning</span></div></div>
+    <div><h3>Programming</h3><div class="tags"><span class="tag w">Python</span><span class="tag w">C++</span><span class="tag w">Java</span><span class="tag w">Swift</span><span class="tag w">Bash</span><span class="tag w">SQL</span><span class="tag w">Dart</span><span class="tag w">MATLAB</span></div></div>
+    <div><h3>Web</h3><div class="tags"><span class="tag w">React.js</span><span class="tag w">Node.js</span><span class="tag w">Express.js</span><span class="tag w">MySQL</span><span class="tag w">HTML</span><span class="tag w">CSS</span></div></div>
+  </div>
+</section>
+
 <section id="publications">
   <div class="label">Publications</div>
   <h2>Papers</h2>
@@ -429,11 +449,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
 <section id="beyond">
   <div class="label">Beyond work</div>
-  <h2>Teaching, leadership and recognition</h2>
+  <h2>Leadership, teaching and recognition</h2>
   <p class="lede">I enjoy explaining things and organising people, and I've done both throughout university.</p>
   <div class="quad">
     <div class="panel"><h3>Teaching</h3><ul>
-      <li><b>Computing Teacher, part-time, Sep 2026 to present</b><span>Abedeen International School, Putrajaya. I teach Cambridge Lower Secondary Computing to Grades 7 to 9 and prepare lessons on computational thinking, algorithms, flowcharts, pseudocode and programming concepts.</span></li>
       <li><b>English Language Tutor, part-time, Jun 2023 to Aug 2026</b><span>EF English Academy. I taught IELTS, PET and Cambridge English programmes to students at different levels, in person and online.</span></li>
       <li><b>Teaching Assistant</b><span>UTM-IET Capstone Experience 5.0</span></li>
       <li><b>Academic support volunteer, June 2022</b><span>Answered student questions and helped run practical and tutorial sessions at UTM.</span></li>
@@ -462,15 +481,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     </ul></div>
   </div>
 
-  <h3 class="sub">Skills</h3>
-  <div class="skillgrid">
-    <div><h3>AI and machine learning</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">OpenCV</span><span class="tag">Hugging Face</span><span class="tag">Ultralytics YOLO (v5 to v11)</span></div></div>
-    <div><h3>Computer vision</h3><div class="tags"><span class="tag">Object detection</span><span class="tag">Image classification</span><span class="tag">Instance segmentation</span><span class="tag">Tracking (SORT, ByteTrack, DeepSORT)</span><span class="tag">Behaviour analytics</span></div></div>
-    <div><h3>Deployment</h3><div class="tags"><span class="tag">TensorRT</span><span class="tag">ONNX</span><span class="tag">Triton</span><span class="tag">Docker</span><span class="tag">AWS EC2</span><span class="tag">CUDA</span><span class="tag">Real-time inference</span></div></div>
-    <div><h3>Language and LLM work</h3><div class="tags"><span class="tag">Prompt engineering</span><span class="tag">Text classification</span><span class="tag">Summarisation</span><span class="tag">Information extraction</span><span class="tag">OCR</span><span class="tag">Transformer fine-tuning</span></div></div>
-    <div><h3>Programming</h3><div class="tags"><span class="tag w">Python</span><span class="tag w">C++</span><span class="tag w">Java</span><span class="tag w">Swift</span><span class="tag w">Bash</span><span class="tag w">SQL</span><span class="tag w">Dart</span><span class="tag w">MATLAB</span></div></div>
-    <div><h3>Web</h3><div class="tags"><span class="tag w">React.js</span><span class="tag w">Node.js</span><span class="tag w">Express.js</span><span class="tag w">MySQL</span><span class="tag w">HTML</span><span class="tag w">CSS</span></div></div>
-  </div>
 </section>
 
 <section id="contact" style="border-top:0">
