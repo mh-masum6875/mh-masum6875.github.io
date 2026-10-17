@@ -138,7 +138,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 
 /* justified body text on wider screens */
 @media (min-width:600px){
-  .lede,.prose p,.row p,.row li,.card p,.panel li span,.contact p,.note{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+  .lede,.prose p,.row p,.row li,.contact p{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
 }
 @media (max-width:820px){
   .hero{grid-template-columns:1fr;padding:56px 0 44px;gap:32px}
@@ -155,7 +155,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 <body>
 <header class="nav"><div class="wrap">
   <a class="brand" href="#top">Maidul</a>
-  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond work</a><a href="#contact">Contact</a></nav>
+  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main class="wrap" id="top">
@@ -295,6 +295,45 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
     <div class="when">Aug 2023</div>
     <div><h3>Technical Team Member</h3><div class="org">4th International Conference on Applied Computing</div>
       <p>Helped run the technical side of the hybrid conference, coordinated parts of the event, and supported promotion and attendee outreach.</p></div>
+  </div>
+</section>
+
+<section id="applied">
+  <div class="label">Applied work</div>
+  <h2>Computer vision in the field</h2>
+  <p class="lede">I have built more than 80 analytics so far. These are the ideas and methods behind them, grouped by area, with my own example code in each repository.</p>
+  <div class="cards">
+    <article class="card"><h3>Workplace safety</h3><div class="org">PPE, falls and danger zones</div>
+      <p>Checks that people wear the right protective gear, flags falls, loitering and people in danger zones, and detects threats.</p>
+      <div class="tags"><span class="tag">PPE</span><span class="tag">Fall detection</span><span class="tag">ONNX Runtime</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/workplace-safety-vision">View the repository</a></article>
+    <article class="card"><h3>Traffic flow</h3><div class="org">Counting and direction</div>
+      <p>Counts vehicles by lane and direction, adapts to day and night lighting, and writes the results to Excel.</p>
+      <div class="tags"><span class="tag">YOLO</span><span class="tag">Tracking</span><span class="tag">Reporting</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/traffic-flow-analytics">View the repository</a></article>
+    <article class="card"><h3>Maritime and subsea</h3><div class="org">Vessels, reefs and smoke</div>
+      <p>Identifies vessels and reads hull numbers, surveys fish, coral and debris from underwater video, and watches for smoke and fire.</p>
+      <div class="tags"><span class="tag">OCR</span><span class="tag">YOLOE</span><span class="tag">PyTorch</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/maritime-subsea-vision">View the repository</a></article>
+    <article class="card"><h3>Retail loss prevention</h3><div class="org">Self-checkout and theft behaviour</div>
+      <p>Catches items that skip the scanner at self-checkout and recognises the sequence of actions behind shoplifting.</p>
+      <div class="tags"><span class="tag">Pose</span><span class="tag">Action recognition</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/retail-loss-prevention-vision">View the repository</a></article>
+    <article class="card"><h3>Food hygiene</h3><div class="org">Kitchens and food handling</div>
+      <p>Checks hairnets and headwear, times handwashing at the basin, and spots food left uncovered.</p>
+      <div class="tags"><span class="tag">YOLOE</span><span class="tag">Compliance</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/food-hygiene-vision">View the repository</a></article>
+    <article class="card"><h3>Patient monitoring</h3><div class="org">Care and ergonomics</div>
+      <p>Watches for in-bed restlessness, bed exits and falls, and slouching at a desk, using motion and body-shape cues.</p>
+      <div class="tags"><span class="tag">Motion analysis</span><span class="tag">Healthcare</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/patient-monitoring-vision">View the repository</a></article>
+    <article class="card"><h3>Waste and cleanliness</h3><div class="org">Sanitation</div>
+      <p>Sorts waste on a conveyor and estimates its weight, and finds littering, spitting and dust on public surfaces.</p>
+      <div class="tags"><span class="tag">Background subtraction</span><span class="tag">Estimation</span></div>
+      <a class="go" href="https://github.com/mh-masum6875/waste-cleanliness-vision">View the repository</a></article>
+    <article class="card"><h3>The full guide</h3><div class="org">All seven areas in one place</div>
+      <p>A single page that explains how a typical analytic works and lists everything I have built in each area.</p>
+      <a class="go" href="https://github.com/mh-masum6875/enterprise-computer-vision-solutions">Open the portfolio guide</a></article>
   </div>
 </section>
 
