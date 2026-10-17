@@ -8,8 +8,18 @@
 <meta property="og:title" content="Maidul Hasan Masum | AI Engineer and Researcher">
 <meta property="og:description" content="Computer vision engineer and researcher. Real-time video analytics and efficient models for edge devices.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Maidul Hasan Masum">
+<meta property="og:url" content="https://mh-masum6875.github.io/">
+<meta property="og:image" content="https://mh-masum6875.github.io/social-card.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maidul Hasan Masum | AI Engineer and Researcher">
+<meta name="twitter:image" content="https://mh-masum6875.github.io/social-card.png">
+<link rel="canonical" href="https://mh-masum6875.github.io/">
+<meta name="theme-color" content="#0f766e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f766e'/%3E%3Ctext x='50' y='67' font-size='54' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Maidul Hasan Masum","jobTitle":"AI Algorithm Engineer","worksFor":{"@type":"Organization","name":"Graymatics"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Universiti Teknologi Malaysia"},"affiliation":{"@type":"CollegeOrUniversity","name":"Universiti Malaya"},"url":"https://mh-masum6875.github.io","sameAs":["https://www.linkedin.com/in/mhmasum6875","https://github.com/mh-masum6875","https://scholar.google.com/citations?user=vjshqTUAAAAJ"]}</script>
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <style>
 :root{
   --bg:#faf8f4;--surface:#ffffff;--ink:#17202a;--muted:#5a6573;--line:#e8e3d9;
@@ -18,10 +28,14 @@
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-@media (prefers-color-scheme:dark){:root{
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0c1117;--surface:#141b23;--ink:#e9eef3;--muted:#9ba7b5;--line:#233040;
   --accent:#5eead4;--accent-ink:#8ff3e2;--accent-soft:#103029;
-  --warm:#f6ad55;--warm-soft:#2a2114;}}
+  --warm:#f6ad55;--warm-soft:#2a2114;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1117;--surface:#141b23;--ink:#e9eef3;--muted:#9ba7b5;--line:#233040;
+  --accent:#5eead4;--accent-ink:#8ff3e2;--accent-soft:#103029;
+  --warm:#f6ad55;--warm-soft:#2a2114;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
@@ -32,7 +46,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.2;margin:0}
 
 /* nav */
 .nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
 .brand{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--ink)}
 .brand:hover{text-decoration:none}
 .nav nav{display:flex;gap:20px}
@@ -50,7 +64,8 @@ h1{font-size:clamp(2.5rem,6.5vw,4.1rem);letter-spacing:-.01em;margin-bottom:18px
 .btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.95rem;border:1.5px solid var(--line);color:var(--ink);background:var(--surface)}
 .btn:hover{text-decoration:none;border-color:var(--accent)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-@media (prefers-color-scheme:dark){.btn.primary{color:#04201c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#04201c}}
+:root[data-theme="dark"] .btn.primary{color:#04201c}
 .facts{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
 .facts dl{margin:0;display:grid;gap:14px}
 .facts dt{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
@@ -131,7 +146,8 @@ td.me,th.me{background:var(--accent-soft);color:var(--accent-ink);font-weight:70
 .contact p{color:rgba(255,255,255,.88);max-width:660px}
 .contact .btn{background:#fff;color:#0b4f4a;border-color:#fff}
 .contact .btn.line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
-@media (prefers-color-scheme:dark){.contact{background:#0f3d38}.contact .btn{color:#0b2f2b}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact{background:#0f3d38}:root:not([data-theme="light"]) .contact .btn{color:#0b2f2b}}
+:root[data-theme="dark"] .contact{background:#0f3d38}:root[data-theme="dark"] .contact .btn{color:#0b2f2b}
 footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
 .top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;display:none;align-items:center;justify-content:center;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.25)}
 .top.show{display:flex}.top:hover{text-decoration:none}
@@ -149,13 +165,30 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
   .contact{padding:32px 24px}
 }
 @media (max-width:540px){.nav nav a:nth-child(n+4){display:none}.nav nav{gap:18px}.facts{padding:20px}}
-@media print{.nav,.top,.btns{display:none}section{break-inside:avoid;padding:24px 0}body{background:#fff}}
+
+/* polish */
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;z-index:30}
+.skip:focus{left:12px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:20}
+.tools{display:flex;align-items:center;gap:16px}
+.theme{display:inline-flex;align-items:center;justify-content:center;background:none;border:1px solid var(--line);color:var(--muted);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1rem;line-height:1;padding:0}
+.theme:hover{border-color:var(--accent);color:var(--ink)}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+.card,.panel,.facts{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover,.panel:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 28px rgba(15,118,110,.12)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.card,.panel{transition:none}.card:hover,.panel:hover{transform:none}}
+@media print{.progress,.theme{display:none}.js .rv{opacity:1;transform:none}.nav,.top,.btns{display:none}section{break-inside:avoid;padding:24px 0}body{background:#fff}}
 </style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
+<div class="progress" id="bar"></div>
 <header class="nav"><div class="wrap">
   <a class="brand" href="#top">Maidul</a>
   <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
+  <div class="tools"><button class="theme" id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></div>
 </div></header>
 
 <main class="wrap" id="top">
@@ -462,7 +495,21 @@ var secs=links.map(function(a){return document.querySelector(a.getAttribute('hre
 var up=document.getElementById('up');
 function on(){var y=window.scrollY+110,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});
 links.forEach(function(a,i){a.classList.toggle('on',i===cur)});up.classList.toggle('show',window.scrollY>700)}
-window.addEventListener('scroll',on,{passive:true});on();
+var bar=document.getElementById('bar');
+function prog(){var h=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(h>0?window.scrollY/h*100:0)+'%'}
+window.addEventListener('scroll',function(){on();prog()},{passive:true});on();prog();
+var items=[].slice.call(document.querySelectorAll('.card,.panel,.row,.pub,.num,.skillgrid>div,.contact'));
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+  items.forEach(function(el){el.classList.add('rv');io.observe(el)});
+}
+var tb=document.getElementById('theme');
+tb.addEventListener('click',function(){
+  var root=document.documentElement,cur=root.getAttribute('data-theme');
+  if(!cur)cur=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('theme',next)}catch(e){}
+});
 }catch(e){}})();
 </script>
 </body>
