@@ -154,7 +154,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 
 /* justified body text on wider screens */
 @media (min-width:600px){
-  .lede,.prose p,.row p,.row li,.contact p{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+  .prose p,.row p,.row li,.contact p{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
 }
 @media (max-width:820px){
   .hero{grid-template-columns:1fr;padding:56px 0 44px;gap:32px}
@@ -167,6 +167,13 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
 @media (max-width:540px){.nav nav a:nth-child(n+4){display:none}.nav nav{gap:18px}.facts{padding:20px}}
 
 /* polish */
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.award{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warm);border-radius:14px;padding:18px 22px;transition:transform .2s ease,border-color .2s ease}
+.award:hover{transform:translateY(-3px);border-color:var(--accent)}
+.award .yr{font-size:.8rem;letter-spacing:.06em}
+.award h3{font-size:1.08rem;margin:2px 0 6px}
+.award p{color:var(--muted);font-size:.92rem;margin:0}
+
 .status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);padding:5px 14px 5px 11px;border-radius:999px;margin-bottom:18px}
 .status .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
@@ -192,7 +199,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 <div class="progress" id="bar"></div>
 <header class="nav"><div class="wrap">
   <a class="brand" href="#top">Maidul</a>
-  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#skills">Skills</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
+  <nav id="menu"><a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#applied">Applied</a><a href="#skills">Skills</a><a href="#publications">Publications</a><a href="#awards">Awards</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a></nav>
   <div class="tools"><button class="theme" id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button></div>
 </div></header>
 
@@ -334,8 +341,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   </div>
   <div class="row">
     <div class="when">Aug 2023</div>
-    <div><h3>Technical Team Member</h3><div class="org">4th International Conference on Applied Computing</div>
-      <p>Helped run the technical side of the hybrid conference, coordinated parts of the event, and supported promotion and attendee outreach.</p></div>
+    <div><h3>Committee Member, Technical Team</h3><div class="org">4th International Conference on Applied Computing</div>
+      <p>I was on the organising committee for this hybrid conference. I helped run the technical side, coordinated parts of the event, and supported promotion and attendee outreach.</p></div>
   </div>
 </section>
 
@@ -427,6 +434,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   </div>
 </section>
 
+<section id="awards">
+  <div class="label">Awards</div>
+  <h2>Recognition</h2>
+  <p class="lede">Research, academic and competition awards from my undergraduate years and since.</p>
+  <div class="awards">
+    <div class="award"><span class="yr">2023</span><h3>Best Undergraduate Research Award</h3><p>UTM Undergraduate Research Conference</p></div>
+    <div class="award"><span class="yr">2023</span><h3>Dean's Award</h3><p>Faculty of Computing, UTM</p></div>
+    <div class="award"><span class="yr">2023</span><h3>Second prize, ACF2023 Idea Contest</h3><p>ASEAN Career Fair with Japan, for an AI application concept</p></div>
+    <div class="award"><span class="yr">2022</span><h3>Third prize, Youth Regional Affairs Dialogue</h3><p>NTU, Singapore, for a project on the future of AI</p></div>
+    <div class="award"><span class="yr">2021</span><h3>First runner-up, Sayembara Bahasa Melayu</h3><p>Malay poetry competition, international student category</p></div>
+    <div class="award"><h3>Other recognition</h3><p>Best Speaker, Robokar runner-up, and second runner-up at the Product Positioning and Branding Workshop and at Designing Doodle</p></div>
+  </div>
+</section>
+
 <section id="projects">
   <div class="label">Projects</div>
   <h2>Things I've built</h2>
@@ -449,7 +470,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
 <section id="beyond">
   <div class="label">Beyond work</div>
-  <h2>Leadership, teaching and recognition</h2>
+  <h2>Leadership and teaching</h2>
   <p class="lede">I enjoy explaining things and organising people, and I've done both throughout university.</p>
   <div class="quad">
     <div class="panel"><h3>Teaching</h3><ul>
@@ -470,14 +491,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       <li><b>Youth Regional Affairs Dialogue, 2022</b><span>Fully funded, NTU University Scholars Programme, Singapore</span></li>
       <li><b>UNPAD International Virtual Summer Programme, 2021</b><span>Marine tourism and coastal vulnerability</span></li>
       <li><b>UKM U-LEAD, 2021</b><span>Virtual Global Leadership Programme</span></li>
-    </ul></div>
-    <div class="panel"><h3>Awards</h3><ul>
-      <li><b>Best Undergraduate Research Award, 2023</b><span>UTM Undergraduate Research Conference</span></li>
-      <li><b>Dean's Award, 2023</b><span>Faculty of Computing, UTM</span></li>
-      <li><b>Second prize, ACF2023 Idea Contest</b><span>ASEAN Career Fair with Japan, for an AI application concept</span></li>
-      <li><b>Third prize, Youth Regional Affairs Dialogue, 2022</b><span>NTU, Singapore, for a project on the future of AI</span></li>
-      <li><b>First runner-up, Sayembara Bahasa Melayu, 2021</b><span>Malay poetry competition, international student category</span></li>
-      <li><b>Also</b><span>Best Speaker, Robokar runner-up, and second runner-up at the Product Positioning and Branding Workshop and at Designing Doodle</span></li>
     </ul></div>
   </div>
 
@@ -508,7 +521,7 @@ links.forEach(function(a,i){a.classList.toggle('on',i===cur)});up.classList.togg
 var bar=document.getElementById('bar');
 function prog(){var h=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(h>0?window.scrollY/h*100:0)+'%'}
 window.addEventListener('scroll',function(){on();prog()},{passive:true});on();prog();
-var items=[].slice.call(document.querySelectorAll('.card,.panel,.row,.pub,.num,.skillgrid>div,.contact'));
+var items=[].slice.call(document.querySelectorAll('.card,.panel,.award,.row,.pub,.num,.skillgrid>div,.contact'));
 if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
   items.forEach(function(el){el.classList.add('rv');io.observe(el)});
