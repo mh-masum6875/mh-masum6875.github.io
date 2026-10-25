@@ -300,10 +300,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
   <div class="cards">
     <article class="card">
-      <h3>LightYolo-SSO</h3><div class="org">Also called WSN-YOLO</div>
-      <p>An object detector for wireless sensor nodes that have very little memory and power. Instead of shrinking an existing model, I searched for the architecture directly using Sperm Swarm Optimization, scoring each candidate on accuracy, FLOPs, size and speed.</p>
-      <ul class="steps"><li>Searches the architecture directly instead of shrinking an existing model</li><li>Scores every candidate on accuracy together with FLOPs, size and speed</li><li>Compared fairly with compact YOLO baselines on the same sensor dataset</li></ul>
-      <p class="note">Results are being updated as the work continues.</p>
+      <h3>WSN-YOLO</h3><div class="org">Repository: LightYolo-SSO</div>
+      <p>Fault detection and localisation for wireless sensor nodes that have very little memory and power. Instead of shrinking an existing model, I searched for the architecture directly using an enhanced Sperm Swarm Optimisation, scoring each candidate on accuracy, FLOPs, size and speed together.</p>
+      <ul class="steps"><li>0.33 M parameters and 0.67 GFLOPs, at 0.887 mAP@0.5 on the test split</li><li>67.5 ms a frame on a Raspberry Pi 4, against 558.5 ms for YOLOv7-tiny</li><li>A tenth of YOLOv7-tiny's energy, measured with an INA219 on the supply rail</li><li>Compared against compact YOLO baselines and nine non-YOLO methods on the same data</li></ul>
+      <p class="note">Submitted to IEEE Sensors Journal, 2026.</p>
       <a class="go" href="https://github.com/mh-masum6875/LightYolo-SSO">View the code on GitHub</a>
     </article>
 
@@ -410,6 +410,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     <div class="pub"><div class="yr">Soon</div><div>
       <div class="t">Trustworthy and Physics-Aware Deep Learning for Myocardial Motion Estimation: Principles, Methods, and Challenges <span class="chip">Accepted</span></div>
       <div class="m">S. S. Showmik, M. Y. I. Idris, Z. Yu, <i>M. H. Masum</i>. INTRAC 2025, Springer, in press.</div></div></div>
+    <div class="pub"><div class="yr">Review</div><div>
+      <div class="t">WSN-YOLO: Enhanced Sperm Swarm Optimisation for Ultra-Lightweight Fault Detection and Localisation in Wireless Sensor Networks <span class="chip">Under review</span> <span class="chip a">First author</span></div>
+      <div class="m"><i>M. H. Masum</i>, B. Raj, S. S. Showmik. IEEE Sensors Journal. <a href="https://github.com/mh-masum6875/LightYolo-SSO">Code</a></div></div></div>
     <div class="pub"><div class="yr">Review</div><div>
       <div class="t">Test-Time Scaling in Computer Vision: A Unified Review of Inference-Time Compute for Visual Understanding, Generation, and Real-Time Deployment <span class="chip">Under review</span> <span class="chip a">First author</span></div>
       <div class="m"><i>M. H. Masum</i>, Z. H. Ahmed, A. M. Zain, M. M. R. Masud. Neural Computing and Applications, Springer.</div></div></div>
